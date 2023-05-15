@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--code icon-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    -->
+</head>
+<body>
+    <header>
+    <div class="nav container">
+      <div class="preloader">
+        <svg class="Animation" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+          <g class="Animation__track" stroke="hsla(0,10%,10%,0.1)">
+            <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+            <circle cx="43" cy="111" r="13" />
+            <circle cx="102" cy="111" r="13" />
+          </g>
+          <g class="Animation__lines" stroke="currentColor">
+            <polyline class="Animation__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" stroke-dasharray="338 338" stroke-dashoffset="-338" />
+            <g class="Animation__wheel1" transform="rotate(-90,43,111)">
+              <circle class="Animation__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+            </g>
+            <g class="Animation__wheel2" transform="rotate(90,102,111)">
+              <circle class="Animation__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+            </g>
+          </g>
+        </g>
+      </svg>
+      <div><a href="#" class="logo">Shopping<span>+</span></a></div>
+       </div>
+        
+        <!--CART   ICON-->  
+        <i class='bx bxs-cart-add' id="cart-icon"></i>
+        
+        <!--CART-->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!--CONTENT-->
+            <div class="cart-content">
+
+                <div class="cart-box">
+                  <!--Div test-->
+                    <img src="photo/sac-dos-1.jpeg" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Sac a dos</div>
+                        <div class="cart-price">$25.50</div>
+                        <input type="number"  value= "1"  class="cart-quantity">
+                    </div>
+                       <!--Remove cart-->
+                    <i class='bx bxs-trash cart-remove'></i> 
+
+                </div> 
+            
+
+            </div>
+            <!--TOTAL-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!--BUY BUTTON-->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!--CART CLOSE-->
+            <i class='bx bx-x' id="cart-close"></i>
+
+        </div>
+    </div> 
+    </header>
+    
+    <section class="shop container"> <!--shop section-->
+        <h2 class="section-title">Shop Products</h2>
+        <div class="shop-content"> <!--CONTENT-->
+            <!--BOX1-->
+            <div class="product-box">
+                <div class="like">
+                    <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                      <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                    </svg>
+                    <i></i>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Nike-1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Force </h2>
+                <span class="product-price">$120</span> <br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX2-->
+
+             <div class="product-box">
+                <div class="like">
+                    <svg width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                      <path class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                    </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Nike-3.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Force BG</h2>
+                <span class="product-price">$120</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX3-->
+             <div class="product-box">
+                <div class="like">
+                    <svg width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                      <path class="heart-like-button" d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                    </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Nike-5.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Force GS</h2>
+                <span class="product-price">$120</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX4-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Nike air force.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Force MR</h2>
+                <span class="product-price">$120</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX4-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Capuche.jpg" alt="" class="product-img">
+                <h2 class="product-title">Capuche White</h2>
+                <span class="product-price">$50</span><br/>
+                <span class="remise">$65</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX4-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/capuche2.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Capuche</h2>
+                <span class="product-price">$50</span><br/>
+                <span class="remise">$65</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX4-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/veste7.jpg" alt="" class="product-img">
+                <h2 class="product-title">Veste Noir</h2>
+                <span class="product-price">$60</span><br/>
+                <span class="remise">$75</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX4-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/veste levis2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Veste Levis</h2>
+                <span class="product-price">$120</span><br/>
+                <span class="remise">$150</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX4-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/veste levis.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Veste Levis</h2>
+                <span class="product-price">$110</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX4-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Jacket The North.jpg" alt="" class="product-img">
+                <h2 class="product-title">Jacket The North Face</h2>
+                <span class="product-price">$150</span><br/>
+                <span class="remise">$170</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX4-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/T-shirt.jpg" alt="" class="product-img">
+                <h2 class="product-title">T-shirt</h2>
+                <span class="product-price">$25</span><br/>
+                <span class="remise">$35</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX4-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Casquette.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Casquette The North</h2>
+                <span class="product-price">$18</span><br/>
+                <span class="remise">$25</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX5-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/sac-dos-2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Backpack-1</h2>
+                <span class="product-price">$90</span><br/>
+                <span class="remise">$110</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX6-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/sac-dos-1.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Backpack-2</h2>
+                <span class="product-price">$90</span><br/>
+                <span class="remise">$110</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX7-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/smart-watch2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Smart watch Apple </h2>
+                <span class="product-price">$500</span><br/>
+                <span class="remise">$580</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX8-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/smart-watch1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Smart Watch Apple</h2>
+                <span class="product-price">$700</span><br/>
+                <span class="remise">$750</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX9-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Airpods pro.jpg" alt="" class="product-img">
+                <h2 class="product-title">Airpods Apple</h2>
+                <span class="product-price">$600</span><br/>
+                <span class="remise">$650</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX10-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Camera Canon.jpg" alt="" class="product-img">
+                <h2 class="product-title">Camera Canon</h2>
+                <span class="product-price">$800</span><br/>
+                <span class="remise">$950</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX11-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Macbook pro 2022.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Macbook pro</h2>
+                <span class="product-price">$1600</span><br/>
+                <span class="remise">$1750</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX12-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/HP Gaming.jpeg" alt="" class="product-img">
+                <h2 class="product-title">HP Gaming</h2>
+                <span class="product-price">$1900</span><br/>
+                <span class="remise">$2200</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX13-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/chaise3.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Computer Chair</h2>
+                <span class="product-price">$150</span><br/>
+                <span class="remise">$180</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX14-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/chaise2.png" alt="" class="product-img">
+                <h2 class="product-title">Wood Chair </h2>
+                <span class="product-price">$120</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX15-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Rolex.jpg" alt="" class="product-img">
+                <h2 class="product-title">Watch Rolex</h2>
+                <span class="product-price">$900</span><br/>
+                <span class="remise">$1000</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX16-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Montre Calvin Klen.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Watch Kalvin klein</h2>
+                <span class="product-price">$60</span><br/>
+                <span class="remise">$75</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX17-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/braclet.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Bracelet</h2>
+                <span class="product-price">$40</span><br/>
+                <span class="remise">$55</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX18-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/tablette.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Tablette Apple</h2>
+                <span class="product-price">$700</span><br/>
+                <span class="remise">$850</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX19-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/mchine caffe.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Coffee machine</h2>
+                <span class="product-price">$130</span><br/>
+                <span class="remise">$150</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX20-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/iphonne14.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Iphone 14 pro</h2>
+                <span class="product-price">$1400</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX21-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Adidas.jpg" alt="" class="product-img">
+                <h2 class="product-title">Shoes Adidas</h2>
+                <span class="product-price">$120</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX22-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Adidas2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Shoes Adidas</h2>
+                <span class="product-price">$120</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX23-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Adidas3.jpg" alt="" class="product-img">
+                <h2 class="product-title">Shoes Adidas</h2>
+                <span class="product-price">$120</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX24-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Adidas4.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Shoes Adidas</h2>
+                <span class="product-price">$120</span><br/>
+                <span class="remise">$140</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX25-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/veste1.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Jacket</h2>
+                <span class="product-price">$90</span><br/>
+                <span class="remise">$100</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX26-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/veste2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Jacket</h2>
+                <span class="product-price">$80</span><br/>
+                <span class="remise">$95</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX27-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/veste3.jpg" alt="" class="product-img">
+                <h2 class="product-title">Jacket</h2>
+                <span class="product-price">$60</span><br/>
+                <span class="remise">$70</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+            <!--BOX28-->
+            <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/vest5.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Jacket</h2>
+                <span class="product-price">$65</span><br/>
+                <span class="remise">$78</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX37-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Bicyclette electrique.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Bicyclette Electrique</h2>
+                <span class="product-price">$250</span><br/>
+                <span class="remise">$290</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX38-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/SAMSUNG TV.jpeg" alt="" class="product-img">
+                <h2 class="product-title">TV SAMSUNG</h2>
+                <span class="product-price">$700</span><br/>
+                <span class="remise">$750</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX39-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/poussette Bebe.jpg" alt="" class="product-img">
+                <h2 class="product-title">Poussette Bebe</h2>
+                <span class="product-price">$100</span><br/>
+                <span class="remise">$130</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+             <!--BOX40-->
+             <div class="product-box">
+                <div class="like">
+                  <svg   width="23" height="20" viewBox="0 0 23 20"  xmlns="http://www.w3.org/2000/svg">
+                    <path  class="heart-like-button"  d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"  />
+                  </svg>
+                    <span id="heart"></span>
+                  </div>
+                <img src="photo/Machine a laver.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Machine a laver</h2>
+                <span class="product-price">$400</span><br/>
+                <span class="remise">$435</span><br/>
+                <a href="#" class="delivry">Free Delivery</a><i class='bx bxl-amazon'></i></a> <br/>    
+                <a href="#" class="in"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></a>
+                <i class='bx bxs-cart-add add-cart' ></i>
+            </div>
+
+
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-title">
+            <a href="#" class="logo-footer">Shopping<span class="plus">+</span> </a>
+        </div>
+        <div class="footer-col">
+            <h4>CUSTOMER SERVICE</h4>
+            <ul>
+                <li><a href="#">Help Center</a> </li>
+                <li><a href="#">Payment methods</a> </li>
+                <li><a href="#">Shipping & Delivery</a> </li>
+                <li><a href="#">Return and refund</a> </li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>ABOUT US</h4>
+            <ul>
+                <li><a href="#">Shopping+ Services</a> </li>
+                <li><a href="#">Shopping+ Logistics</a> </li>
+                <li><a href="#">Official Brand Shops</a> </li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>FIND US ON</h4>
+            <div class="container-footer">
+                <a href="#" class="btn"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="#" class="btn"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="btn"><i class='bx bxl-youtube' ></i></a>
+                <a href="#" class="btn"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" class="btn"><i class='bx bxl-google' ></i></a>
+            </div>
+            <div class="footer-end">© 2023 Shopping+</div> 
+        </div>
+        
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
